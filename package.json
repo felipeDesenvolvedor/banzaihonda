@@ -1,0 +1,41 @@
+{
+  "name": "banzaihonda",
+  "version": "1.0.0",
+  "description": "Site teste Banzai Honda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeDesenvolvedor/banzaihonda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel": "^6.23.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^1.5.4",
+    "node-sass": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/felipeDesenvolvedor/banzaihonda/issues"
+  },
+  "homepage": "https://github.com/felipeDesenvolvedor/banzaihonda#readme",
+  "dependencies": {
+    "cssmin": "^0.4.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "nunjucks": "^3.2.3",
+    "routes": "^2.1.0"
+  }
+}
