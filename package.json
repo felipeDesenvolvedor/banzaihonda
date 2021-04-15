@@ -4,7 +4,8 @@
   "description": "Site teste Banzai Honda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp watch"
   },
   "repository": {
     "type": "git",
