@@ -1,0 +1,58 @@
+.homeDadosA {
+    margin-top:34px;
+
+    &__fotos {
+        display: flex;
+        margin-top:33px;
+    }
+    &__foto {
+        height: auto;  
+        max-width: 100%;
+        object-fit: cover;
+        align-self: center;
+    }
+
+    &__list {
+        margin-right:42px;
+
+        .homeDadosA__foto {
+            border: 1px solid #D5D5D5;
+            padding:1px;
+        }
+    }
+
+    &__titulo {
+        font-size:23px;
+        font-style: italic;
+    }
+
+    &__texto {
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-top:35px;
+    }
+
+    @media (max-width:800px) {
+
+        &__titulo,
+        &__texto {
+            text-align: center;
+        }
+
+        &__list {
+            display: none;
+        }
+    }
+
+    @media (min-width:800px) {
+        font-size:34px;
+
+        &__conteudo {
+            width: 80%;
+        }
+
+        &__titulo {
+            font-size:34px;
+        }
+    }
+}

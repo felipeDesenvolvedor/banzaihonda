@@ -37,6 +37,34 @@
     url("../fonts/a129bb6d34d961999439ccd226117760.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
 
+.FoundryMedium {
+    font-family: "FoundryMedium";
+}
+.FoundryBold {
+    font-family: "FoundryBold";
+}
+.FoundryLight {
+    font-family: "FoundryLight";
+}
+.FoundryRegular {
+    font-family: "FoundryRegular";
+}
+
+.RobotoBold {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 700;
+}
+
+.RobotoLight {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300
+}
+
+.RobotoRegular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 // Configuracoes gerais
 
 @media (min-width:320px) {
