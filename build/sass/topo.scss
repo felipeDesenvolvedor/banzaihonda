@@ -1,0 +1,108 @@
+
+@media (max-width:800px) {
+    .concessionarias__texto,
+    .contatoemail__texto,
+    .portal__texto {
+        display:none;
+    }
+    
+    .topoDadosA {
+        &__portal,
+        &__contatos {
+            flex-basis: 50%;
+        }
+    }
+
+    .topoDadosB .container {
+        flex-direction: column;
+
+        .topoDadosB__contatotel {
+            margin-top:30px;
+         }
+    }
+}
+
+.topo {
+    display:flex;
+    flex-direction: column;
+}
+
+.topoDadosA {
+    background-color:#EEEEEE;
+    color: #707070;
+    font-size:12px;
+    padding:4px;
+
+    &__contatos,
+    .container {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    &__contatoemail,
+    &__concessionarias,
+    &__portal {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-right: 10px;
+        }
+    }
+
+    .portal__button {
+        background:url('../img/home-button.svg') no-repeat center / 100%;
+        width: 20px;
+        height: 17px;
+        display: inline-block;
+    }
+
+    .concessionarias__button {
+        background:url('../img/concessionaria-icon.svg') no-repeat center / 100%;
+        width: 12px;
+        height: 17px;
+        display: inline-block;
+    }
+
+    .contatoemail__button {
+        background:url('../img/email-icone.svg') no-repeat center / 100%;
+        width: 16px;
+        height: 13px;
+        display: inline-block;
+    }
+}
+
+.topoDadosB {
+    margin-top:20px;
+
+    .container {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 200px;
+        height: 52px;
+        background:url('../img/logo.png') no-repeat center / 100%;
+    }
+
+    &__contatotel {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-style: italic;
+
+        span:first-child {
+            font-size:16px;
+            color:#727B7A;
+        }
+
+        span:last-child {
+            font-size:26px;
+            color:#DF0209;
+            margin-top:6px;
+            letter-spacing: 2px;
+        }
+    }
+}
