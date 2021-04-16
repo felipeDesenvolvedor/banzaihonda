@@ -1,0 +1,22 @@
+.banner {
+    
+    @media (min-width:801px) {
+        .img__mobile {
+            display: none;   
+        }
+    }
+
+    @media (max-width:800px) {
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__img {
+        height: auto;  
+        max-width: 100%;
+        object-fit: cover;
+        align-self: center;
+    }
+}

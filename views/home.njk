@@ -14,41 +14,56 @@
     <link href="/css/partial.css" rel="stylesheet">
     <link href="/css/home.css" rel="stylesheet">
     <link href="/css/topo.css" rel="stylesheet">
+    <link href="/css/banners.css" rel="stylesheet">
 </head>
 <body>
+    <header class="topo FoundryMedium">
+        <div class="topoDadosA">
+            <div class="container">
+                <div class="topoDadosA__portal">
+                    <span class="portal__button"></span>
+                    <span class="portal__texto">Ir para o Portal Banzai</span>
+                </div>
+                
+                <div class="topoDadosA__contatos">
+                    <div class="topoDadosA__concessionarias">
+                        <span class="concessionarias__button"></span>
+                        <span class="concessionarias__texto">Encontre uma concessionária</span>
+                    </div>
+
+                    <div class="topoDadosA__contatoemail">
+                        <span class="contatoemail__button"></span>
+                        <span class="contatoemail__texto">Fale Conosco</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="topoDadosB">
+            <div class="container">
+                <div class="topoDadosB__logo"></div>
+                <div class="topoDadosB__contatotel">
+                    <span class="topoDadosB__texto">CENTRAL DE ATENDIMENTO</span>
+                    <span class="topoDadosB__texto FoundryBold">(31) 3123-1234</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
     <main class="principal">
-        <header class="topo FoundryMedium">
-            <div class="topoDadosA">
-                <div class="container">
-                    <div class="topoDadosA__portal">
-                        <span class="portal__button"></span>
-                        <span class="portal__texto">Ir para o Portal Banzai</span>
-                    </div>
-                    
-                    <div class="topoDadosA__contatos">
-                        <div class="topoDadosA__concessionarias">
-                            <span class="concessionarias__button"></span>
-                            <span class="concessionarias__texto">Encontre uma concessionária</span>
-                        </div>
+        <section class="banner">
+            <img class="banner__img" 
+                srcset="/img/banner-mobile-1-418w.png 418w,
+                        /img/banner-desktop-1-1920w.png 1920w" 
+                sizes="(min-width:320px) and (max-width:800px) 418px,
+                       (min-width:801px) and (max-width:1920px) 1920px"
+                src="/img/banner-dektop-1-1920w.png" alt="Banner">
 
-                        <div class="topoDadosA__contatoemail">
-                            <span class="contatoemail__button"></span>
-                            <span class="contatoemail__texto">Fale Conosco</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="topoDadosB">
-                <div class="container">
-                    <div class="topoDadosB__logo"></div>
-                    <div class="topoDadosB__contatotel">
-                        <span class="topoDadosB__texto">CENTRAL DE ATENDIMENTO</span>
-                        <span class="topoDadosB__texto FoundryBold">(31) 3123-1234</span>
-                    </div>
-                </div>
-            </div>
-        </header>
+            <img class="banner__img img__mobile"
+                srcset="/img/civic10-mobile-1-600w.svg 300w"
+                sizes="(min-width:320px) and (max-width:800px) 300px"
+                src="/img/civic10-mobile-1-600w.svg" alt="Banner"> 
+        </section>
     </main>    
 </body>
 </html>
