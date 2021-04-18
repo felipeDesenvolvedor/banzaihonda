@@ -39,6 +39,12 @@
         border-radius: 3px;   
     }
 
+    @media (max-width:990px) {
+        &__lista {
+            flex-direction: column;
+        }
+    }
+
     @media (max-width:800px) {
         &__titulo,
         &__texto {
