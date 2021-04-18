@@ -1,6 +1,10 @@
 .homeDadosA {
     margin-top:34px;
 
+    &__conteudo:nth-child(2) {
+        margin-top:50px;
+    }
+
     &__fotos {
         display: flex;
         margin-top:33px;
@@ -13,8 +17,6 @@
     }
 
     &__list {
-        margin-right:42px;
-
         .homeDadosA__foto {
             border: 1px solid #D5D5D5;
             padding:1px;
@@ -32,22 +34,52 @@
         margin-top:35px;
     }
 
+    &__conteudo:nth-child(2) .homeDadosA__list {
+        .homeDadosA__foto {
+            width: 323px;
+        }
+
+        .homeDadosA__item {
+            margin-right: 10px;
+        }
+    }
+
+    &__conteudo:nth-child(2) {
+
+        .container {
+            margin-top:30px;
+        }
+
+        .homeDadosA__titulo {
+            font-size:20px;
+            margin-top:10px;
+        }
+
+        .homeDadosA__texto {
+            font-size:14px;
+        }
+    }
+
     @media (max-width:800px) {
 
         &__titulo,
         &__texto {
             text-align: center;
         }
-
-        &__list {
-            display: none;
-        }
     }
 
     @media (min-width:800px) {
         font-size:34px;
 
-        &__conteudo {
+        &__conteudo:nth-child(2) .homeDadosA__list {
+            // width:425px;
+
+            .homeDadosA__item {
+                margin-right:42px;
+            }
+        }
+
+        &__conteudo:nth-child(1) {
             width: 80%;
         }
 
