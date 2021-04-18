@@ -67,6 +67,10 @@
 
 // Configuracoes gerais
 
+.container {
+    position: relative;
+}
+
 @media (min-width:320px) {
     .container {
         width: 300px;

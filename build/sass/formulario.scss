@@ -1,0 +1,71 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width:270px;
+    background-color:#EEEEEE;
+    padding:15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.29);
+    border-radius: 4px;
+
+    &__contanto {
+        margin:40px auto;
+    }
+
+    &__titulo {
+        display: flex;
+        margin-bottom:20px;
+
+        &::before {
+            content:'';
+            width:39px;
+            height: 39px;
+            background:url('/img/form-tel-icone.svg');
+            margin-right: 12px;
+        }
+
+        .titulo__container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__texto {
+        &:first-child {
+            font-size: 14px;
+        }
+
+        &:last-child {
+            color:#DF0209;
+            font-size: 20px;
+        }
+    }
+
+    &__input {
+        border:1px solid rgba(0, 0, 0, 0.12);
+        background-color:transparent;
+        margin-bottom:6px;
+        padding:12px;
+        border-radius: 4px;
+        // opacity: 0.12;
+
+        &::placeholder {
+            color:rgba(0, 0, 0, 0.61);
+        }
+    }
+
+    &__button {
+        background-color:#1CB72A;
+        border:none;
+        border-radius: 4px;
+        padding:23px 44px;
+        color:#fff;
+        font-size: 14px;
+    }
+
+    @media (min-width: 800px) {
+        position: fixed;
+        right: 100px;
+        top:100px;
+        z-index: 1;
+    }
+}
