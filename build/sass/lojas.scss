@@ -7,18 +7,6 @@
         font-size: 24px;
     }
 
-    &__concessionarias {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        
-        .topoDadosB__contatotel {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-        }
-    }
-
     &__concessionarias,
     &__contatotel {
         width: 270px;
@@ -26,8 +14,49 @@
         background: #fff;
         border:solid 1px red;
         border-radius: 4px;  
-        // margin-bottom:18px;
         margin:0 auto 18px auto;
+        display: flex;
+        align-content: center;
+        
+        .lojas__facebook {
+            margin:0 20px;
+        }
+
+        .container__texto {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .lojas__texto {
+            &:first-child {
+                font-size: 14px;
+            }
+
+            &:last-child {
+                font-size: 20px;
+                text-transform: uppercase;
+                color:red;
+                margin-top:3px;
+            }
+        }
+    }
+
+    &__contatotel {
+        .container__texto {
+            margin-left: 20px;
+        }
+
+        .lojas__texto {
+            &:first-child {
+                color:#727B7A;
+            }
+
+            &:last-child {
+                font-style: italic;
+            }
+        }
     }
 
     &__redessociais {
@@ -55,6 +84,12 @@
         height: 18px;
     }
 
+    @media (max-width:800px) {
+        &__contatotel {
+            justify-content: center;
+        }
+    }
+
     @media (min-width:800px) {
         .container {
             width: 570px;
@@ -70,6 +105,12 @@
     
         &__redessociais {
             clear: both;
+        }
+
+        &__contatotel {
+            .container__texto {
+                margin-left: 20px;
+            }
         }
     }
 }
