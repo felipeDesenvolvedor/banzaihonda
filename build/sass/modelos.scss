@@ -1,0 +1,54 @@
+.modelos {
+    margin-top:80px;
+
+    &__texto {
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-top:10px;
+    }
+
+    &__lista {
+        margin-top:33px;
+
+        .modelos__texto {
+            font-size: 14px;
+            line-height: 1.2em;
+            margin-top:10px;
+        }
+    }
+
+    &__item {
+        text-align:center;
+        width: 270px;
+        border:1px solid #D5D5D5;
+        padding:15px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+    }
+
+    &__saibamais {
+        margin-top:20px;
+        border:1px solid #D5D5D5;
+        width: 230px;
+        height: 36px;
+        background-color:transparent;
+        border-radius: 3px;   
+    }
+
+    @media (max-width:800px) {
+        &__titulo,
+        &__texto {
+            text-align: center;
+        }
+    }
+
+    @media (min-width:800px) {
+        &__lista {
+            display: flex;
+        } 
+    }
+}

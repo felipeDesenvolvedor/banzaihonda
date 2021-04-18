@@ -23,11 +23,6 @@
         }
     }
 
-    &__titulo {
-        font-size:23px;
-        font-style: italic;
-    }
-
     &__texto {
         font-size: 18px;
         line-height: 1.2em;
@@ -81,10 +76,6 @@
 
         &__conteudo:nth-child(1) {
             width: 80%;
-        }
-
-        &__titulo {
-            font-size:34px;
         }
     }
 }

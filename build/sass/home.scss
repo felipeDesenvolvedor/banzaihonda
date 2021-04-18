@@ -1,1 +1,10 @@
 @import "./partial.scss";
+
+.titulo {
+    font-size:23px;
+    font-style: italic;
+    
+    @media (min-width:800px) {
+        font-size:34px;
+    }
+}
