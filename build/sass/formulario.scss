@@ -44,13 +44,35 @@
         border:1px solid rgba(0, 0, 0, 0.12);
         background-color:transparent;
         margin-bottom:6px;
-        padding:12px;
+        padding:12px 12px 12px 30px;
         border-radius: 4px;
-        // opacity: 0.12;
+        background-size:14px;
+        background-repeat: no-repeat;
+        background-position:8px center;
 
         &::placeholder {
             color:rgba(0, 0, 0, 0.61);
         }
+    }
+
+    &__nome {
+        background-image: url("/img/form-icone-nome.svg");
+    }
+
+    &__email {
+        background-image: url("/img/form-icone-email.svg");
+    }
+
+    &__telefone {
+        background-image: url("/img/form-icone-tel.svg");
+    }
+
+    &__horario {
+        background-image: url("/img/form-icone-horario.svg");
+    }
+
+    &__unidade {
+        background-image: url("/img/form-icone-nome.svg");
     }
 
     &__button {
