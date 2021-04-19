@@ -57,6 +57,10 @@
 
     @media (max-width:800px) {
 
+        &__conteudo:nth-child(1) .homeDadosA__list {
+            display: none;
+        }
+
         &__titulo,
         &__texto {
             text-align: center;
@@ -66,16 +70,20 @@
     @media (min-width:800px) {
         font-size:34px;
 
+        &__conteudo:nth-child(1) {
+            width: 80%;
+
+             .homeDadosA__list {
+                margin-right: 30px;
+            }
+        }
+
         &__conteudo:nth-child(2) .homeDadosA__list {
-            // width:425px;
+           margin-right: 30px;
 
             .homeDadosA__item {
                 margin-right:42px;
             }
-        }
-
-        &__conteudo:nth-child(1) {
-            width: 80%;
         }
     }
 }
